@@ -1,0 +1,126 @@
+:root {
+  --green-color: rgb(58, 247, 20);
+  --red-color: rgb(209, 56, 16);
+}
+
+body{
+margin: 0;
+padding: 0;
+background: rgb(241, 242, 242);
+}
+
+.container{
+text-align: center;
+margin-top: 5vh;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.yourBalance{
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+flex: 1;
+}
+
+#balance{
+font-size: 2rem;
+font-weight: bold;
+}
+
+
+/* Income/Expenses White Table */
+#table{
+width: 250px;
+height: 100px;
+background: #fff;
+border: 1px solid rgb(241, 242, 242);
+box-shadow: 0 0 10px rgba(0,0,0,0.5);
+padding: 0px 50px;
+display: flex;
+flex-direction: row;
+flex: 1;
+}
+
+#table hr{
+height: 80%;
+}
+
+#table #expenses ,#income{
+font-size: 1.5rem;
+}
+
+#table #income{
+color: var(--green-color);
+}
+
+#table #expenses{
+color: var(--red-color);
+}
+
+/* Transactions History */
+#history{
+width: 350px;
+}
+
+#history hr{
+margin-bottom: 15px;
+order: 2;
+}
+
+#history .addElem{
+background: #fff;
+padding: 10px 10px;
+display: flex;
+justify-content: space-between;
+box-shadow: 0 0 10px rgba(0,0,0,0.5);
+margin-bottom: 12px;
+font-size: 1.2rem;
+}
+
+#history .addElem .x{
+position: relative;
+right: 32px;
+color: #fff;
+background: var(--red-color);
+padding: 5px;
+font-size: 1rem;
+cursor: pointer;
+}
+
+
+.d-none{
+visibility: hidden;
+}
+
+
+/* Add Transaction */
+#transaction{
+width: 350px;
+margin: 20px;
+}
+
+#transaction .transactionForm{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: 1.2rem;
+}
+
+#transaction .transactionForm input{
+width: 350px;
+height: 30px;
+margin-bottom: 10px;
+}
+
+#transaction .transactionForm button{
+color: #fff;
+background: rgb(141, 83, 203);
+padding: 10px;
+border: 0;
+cursor: pointer;
+width: 350px;
+margin-top: 12px;
+font-size: 1.1rem;
+}
